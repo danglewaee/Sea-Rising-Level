@@ -1,0 +1,107 @@
+/* App.css - Light theme with Smooth Scroll and Navbar */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fb;  /* nền sáng nhẹ */
+  color: #222; /* chữ đen nhạt */
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1d3557; /* xanh đậm */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.navbar a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #a8dadc; /* hiệu ứng hover màu sáng */
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-top: 100px;  /* add margin to offset navbar */
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  color: white; /* xanh đậm chuyên nghiệp */
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Image Sections */
+.image-section {
+  background-color: #ffffff; /* ô trắng */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.image-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #457b9d; /* xanh trung tính */
+}
+
+.plot-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 80px;
+  color: white;
+  font-size: 0.9rem;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,114 @@
+/* App.css - Enhanced Professional Design */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af); /* nền gradient mượt mà */
+  color: #ffffff; /* chữ sáng */
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #34495e; /* màu navbar đậm hơn */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.navbar a {
+  color: #ecf0f1;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #f39c12; /* hiệu ứng hover đổi màu */
+  transform: scale(1.1);
+}
+
+.header {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #f39c12; /* màu vàng nổi bật */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #ecf0f1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Image Sections */
+.image-section {
+  background-color: rgba(255, 255, 255, 0.9); /* nền trắng mờ */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.image-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #2c3e50; /* màu đậm */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.plot-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plot-img:hover {
+  transform: scale(1.05); /* phóng to ảnh khi hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 80px;
+  color: #ecf0f1;
+  font-size: 0.9rem;
+  padding-bottom: 20px;
+}
