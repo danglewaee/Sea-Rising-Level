@@ -1,0 +1,30 @@
+﻿{
+  "honolulu": {
+    "station": "1612340",
+    "display_name": "Honolulu, HI",
+    "dem_path": "data/honolulu_dem.tif",
+    "admin_boundary": null,
+    "timezone": "Pacific/Honolulu"
+  },
+  "newyork": {
+    "station": "8518750",
+    "display_name": "The Battery, New York",
+    "dem_path": null,
+    "admin_boundary": null,
+    "timezone": "America/New_York"
+  },
+  "miami": {
+    "station": "8723214",
+    "display_name": "Virginia Key, Miami",
+    "dem_path": null,
+    "admin_boundary": null,
+    "timezone": "America/New_York"
+  },
+  "sanfrancisco": {
+    "station": "9414290",
+    "display_name": "San Francisco",
+    "dem_path": null,
+    "admin_boundary": null,
+    "timezone": "America/Los_Angeles"
+  }
+}

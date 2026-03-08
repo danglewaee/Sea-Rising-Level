@@ -1,0 +1,29 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+Backend/.venv/
+Backend/.venv311/
+
+# Node
+node_modules/
+Frontend/**/node_modules/
+app/node_modules/
+
+# OS/IDE
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Data outputs
+Backend/sea_level_risk/outputs/
+data/processed/
+data/dem_cache/
+
+# Large datasets
+*.tar.gz
+*.pth
+*.h5
+*.keras

@@ -1,0 +1,4 @@
+﻿-r requirements-base.txt
+tensorflow==2.19.0
+plotly
+streamlit
